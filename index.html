@@ -59,6 +59,8 @@
         const weatherData = await fetch(apiUrl + city + `&appId=${apiKey}`);
         if (weatherData.status == 404) {
           document.querySelector(".error").style.display = "block"
+          document.querySelector(".weatherdetails").style.display = "none"
+
 
           
           
