@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #89CFF0, #87CEEB);
+
+}
+.container{
+    width: 400px;
+    padding: 2rem 2rem 3.8rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.inputbox { 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(248, 247, 247,0.5);
+    padding: 10px 4px;
+    font-size: 14px;
+    width: 240px;
+    box-shadow: rgba(243, 241, 241, 0.45) 0px 25px 20px -20px;
+    color: white;
+}
+.inputbox::placeholder{
+    color: white;
+    font-size: 14px;
+
+}
+.btn {
+    background-color: #fff;
+    color: #6C63FF;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.btn:hover {
+    background-color: blue;
+    color: #ffff;
+}
+
+.weather-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.weather-report img {
+    width: 150px;
+
+}
+.weather-report h2 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.weather-report h4 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 3.5rem;
+}
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weather-info img {
+    width: 32px;
+    height: 32px;
+    
+}
+.weather-info-value {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+.weather-info-value p{
+    font-size: 28px;
+    color: #fff;
+}
+.weather-info-value span{
+    font-size: 16px;
+    color: #F5F5F5;
+    position: absolute;
+    font-weight: 400;
+    top: 2.4rem;
+}
+.weatherdetails {
+    display: none;
+}
+.error {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+
+
+
+
